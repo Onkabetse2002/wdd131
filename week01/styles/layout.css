@@ -1,0 +1,66 @@
+/* Apply CSS Grid to the body */
+body {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+/* Wrap the content inside a container for better maintainability */
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+    width: 100%;
+}
+
+/* Header and Navigation */
+header {
+    grid-area: header;
+    background-color: #2C3E50;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    grid-area: main;
+    padding: 2rem;
+    background-color: #ECF0F1;
+}
+
+/* Footer */
+footer {
+    grid-area: footer;
+    background-color: #2C3E50;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+}
