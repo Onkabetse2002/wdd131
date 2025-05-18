@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menuButton" class="hamburger">&#9776;</button>
+        <nav id="navMenu">
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Temple Gallery</h1>
+        <div class="gallery">
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/800x500/aba-nigeria-temple-lds-1636397-wallpaper.jpg" alt="Aba Nigeria Temple">
+                <figcaption>Aba Nigeria Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/800x450/accra-ghana-temple-detail-249022-2400x1200.jpg" alt="Accra Ghana Temple">
+                <figcaption>Accra Ghana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/adelaide-australia/800x450/adelaide-australia-temple-lds-866420-wallpaper.jpg" alt="Adelaide Australia Temple">
+                <figcaption>Adelaide Australia Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Onkabetse Galehole</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

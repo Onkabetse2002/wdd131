@@ -1,0 +1,83 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+}
+
+.hamburger {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: block; /* Show only in mobile */
+}
+
+nav {
+    display: none; /* Hidden in mobile */
+    flex-direction: column;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 15px;
+    padding: 20px;
+    justify-content: center;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+
+figure img {
+    width: 100%;
+    height: 250px; /* Set fixed height for consistent display */
+    object-fit: cover; /* Prevents stretching */
+    border-radius: 10px; /* Optional styling */
+    display: block;
+}
+
+/* ✅ Footer Styling */
+footer {
+    background: #222;
+    color: white;
+    padding: 1rem;
+}
+
+/* ✅ Larger Screens Adjustments */
+@media (min-width: 768px) {
+    .hamburger {
+        display: none; /* Hide hamburger on larger screens */
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust for more columns */
+    }
+}
