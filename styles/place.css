@@ -1,0 +1,40 @@
+:root {
+    --primary-color: #3498db;
+    --background-color: #f4f4f4;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+}
+
+.hero-image {
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+.weather-icon::after {
+    content: "⛅";
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .hero-image {
+        width: 80%;
+        max-width: 250px;
+    }
+
+    .weather-icon::after {
+        content: url('../images/weather-icon.svg');
+    }
+}
