@@ -1,0 +1,63 @@
+/* General Styling */
+body {
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+/* Center content and maintain consistency */
+header, 
+main, 
+footer {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+/* Banner replacing the deprecated marquee */
+.banner {
+    padding: 1rem;
+    background-color: #4a90e2; /* Improved contrast */
+    color: #fff; /* Better readability */
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Heading styles */
+h1 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: navy;
+    text-align: left; /* Changed from center to left-aligned */
+    grid-column: span 2; /* Ensuring it spans both columns */
+}
+
+/* Main layout using grid */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two-column layout */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Text alignment for readability */
+article p {
+    text-align: justify;
+}
+
+/* Callout container accessibility fix */
+.callout {
+    padding: 15px;
+    background-color: #502463; /* Adjusted for better contrast */
+    color: #fff; /* Improved readability */
+}
+
+/* Footer adjustments */
+footer {
+    margin-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: smaller;
+}
+
+.footer-left {
+    text-align: left; /* Adjusted to align content to the left */
+}

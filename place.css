@@ -1,0 +1,43 @@
+
+:root {
+    --primary-color: #3498db;
+    --background-color: #f4f4f4;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+}
+
+.weather-icon::after {
+    content: "⛅";
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .weather-icon::after {
+        content: url('weather-icon.svg');
+    }
+}
+
+.hero-image {
+    width: 50%; /* Reduce size to 50% of its container */
+    max-width: 300px; /* Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 20px auto; /* Center the image */
+}
+
+@media (max-width: 768px) {
+    .hero-image {
+        width: 80%; /* Make it slightly bigger on smaller screens */
+        max-width: 250px;
+    }
+}
