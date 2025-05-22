@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Country Page</title>
+    <title>South Africa - Country Page</title>
+    <meta name="description" content="A webpage showcasing South Africa, including hero images, weather details, and cultural highlights.">
+    <meta name="author" content="Onkabetse Galehole">
     <link rel="stylesheet" href="week03/styles/place.css">
-    <script src="script.js" defer></script>
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
 
@@ -15,7 +17,11 @@
 
     <main>
         <section id="hero">
-            <img src="images/madiba.webp" alt="Nelson Mandela" class="hero-image">
+            <picture>
+                <source srcset="images/madiba" media="(min-width: 768px)">
+                <img src="images/madiba.webp" alt="Nelson Mandela">
+
+            </picture>
         </section>
 
         <section id="weather">
@@ -23,7 +29,6 @@
             <p>Temperature: <span id="temp">10°C</span></p>
             <p>Wind Speed: <span id="wind">5 km/h</span></p>
             <p>Wind Chill: <span id="windchill">N/A</span></p>
-    
         </section>
     </main>
 
