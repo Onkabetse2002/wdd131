@@ -1,21 +1,41 @@
-// Example product array
+// Product array - example products with ids and names
 const products = [
-    { id: 1, name: "Product A" },
-    { id: 2, name: "Product B" },
-    { id: 3, name: "Product C" }
+  { id: 'product-a', name: 'Product A' },
+  { id: 'product-b', name: 'Product B' },
+  { id: 'product-c', name: 'Product C' },
+  { id: 'product-d', name: 'Product D' }
 ];
 
-// Populate the product name select element
-const productSelect = document.getElementById('productName');
-products.forEach(product => {
+// Function to populate the product select dropdown
+function populateProductDropdown() {
+  const productSelect = document.getElementById('productName');
+  if (!productSelect) return;
+
+  products.forEach(product => {
     const option = document.createElement('option');
     option.value = product.id;
     option.textContent = product.name;
     productSelect.appendChild(option);
-});
+  });
+}
 
-// Example of using localStorage to track reviews
-document.getElementById('reviewForm').addEventListener('submit', function() {
-    let reviewCount = localStorage.getItem('reviewCount') || 0;
-    localStorage.setItem('reviewCount', ++reviewCount);
+// Function to update localStorage review count on form submission
+function initializeReviewCountTracking() {
+  const form = document.getElementById('reviewForm');
+
+  if (!form) return;
+
+  form.addEventListener('submit', function () {
+    let count = localStorage.getItem('reviewCount');
+    if (count === null) count = 0;
+    else count = parseInt(count, 10);
+
+    localStorage.setItem('reviewCount', count + 1);
+  });
+}
+
+// Initialize page behaviors after DOM content loaded
+document.addEventListener('DOMContentLoaded', function () {
+  populateProductDropdown();
+  initializeReviewCountTracking();
 });

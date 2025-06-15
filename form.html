@@ -2,10 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A form to submit product reviews including ratings, features, and written feedback." />
+    <meta name="author" content="Your Name" />
     <title>Product Review Form</title>
-    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
 </head>
 
 <body>
@@ -21,49 +24,53 @@
             <label>Overall Rating:</label>
             <div class="rating">
                 <label>
-                    <input type="radio" name="rating" value="1" required> ☆
+                    <input type="radio" name="rating" value="1" required /> ☆
                 </label>
                 <label>
-                    <input type="radio" name="rating" value="2" required> ☆
+                    <input type="radio" name="rating" value="2" required /> ☆
                 </label>
                 <label>
-                    <input type="radio" name="rating" value="3" required> ☆
+                    <input type="radio" name="rating" value="3" required /> ☆
                 </label>
                 <label>
-                    <input type="radio" name="rating" value="4" required> ☆
+                    <input type="radio" name="rating" value="4" required /> ☆
                 </label>
                 <label>
-                    <input type="radio" name="rating" value="5" required> ☆
+                    <input type="radio" name="rating" value="5" required /> ☆
                 </label>
             </div>
 
             <label for="installationDate">Date of Installation:</label>
-            <input type="date" id="installationDate" name="installationDate" required>
+            <input type="date" id="installationDate" name="installationDate" required />
 
             <fieldset>
                 <legend>Useful Features:</legend>
                 <label for="feature1">
-                    <input type="checkbox" id="feature1" name="features" value="Feature 1"> Feature 1
+                    <input type="checkbox" id="feature1" name="features" value="Feature 1" /> Feature 1
                 </label>
                 <label for="feature2">
-                    <input type="checkbox" id="feature2" name="features" value="Feature 2"> Feature 2
+                    <input type="checkbox" id="feature2" name="features" value="Feature 2" /> Feature 2
                 </label>
                 <label for="feature3">
-                    <input type="checkbox" id="feature3" name="features" value="Feature 3"> Feature 3
+                    <input type="checkbox" id="feature3" name="features" value="Feature 3" /> Feature 3
+                </label>
+                <label for="feature4">
+                    <input type="checkbox" id="feature4" name="features" value="Feature 4" /> Feature 4
                 </label>
             </fieldset>
 
             <label for="writtenReview">Written Review:</label>
             <textarea id="writtenReview" name="writtenReview" rows="4" cols="50"></textarea>
 
-            <label for="userName">User  Name:</label>
-            <input type="text" id="userName" name="userName" required>
+            <label for="userName">User Name:</label>
+            <input type="text" id="userName" name="userName" required />
 
-            <input type="submit" value="Submit Review">
+            <input type="submit" value="Submit" />
         </form>
     </main>
 
-    <script src="scripts/scriptreview.js"></script>
+    <script src="scripts/scriptreview.js" defer></script>
 </body>
 
 </html>
+
