@@ -1,9 +1,9 @@
 // Product array - example products with ids and names
 const products = [
-  { id: 'product-a', name: 'Product A' },
-  { id: 'product-b', name: 'Product B' },
-  { id: 'product-c', name: 'Product C' },
-  { id: 'product-d', name: 'Product D' }
+  { id: 'product-a', name: 'Boss' },
+  { id: 'product-b', name: 'Club De Nuit' },
+  { id: 'product-c', name: 'Diesel' },
+  { id: 'product-d', name: 'Old Spice' }
 ];
 
 // Function to populate the product select dropdown

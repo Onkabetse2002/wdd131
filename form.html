@@ -5,57 +5,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="A form to submit product reviews including ratings, features, and written feedback." />
-    <meta name="author" content="Your Name" />
-    <title>Product Review Form</title>
+    <meta name="author" content="Onkabetse Galehole" />
+    <title>Cologne Review Form</title>
     <link rel="stylesheet" href="styles/form.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
 </head>
 
 <body>
     <main class="container">
-        <h1>Product Review Form</h1>
+        <h1>Cologne Review Form</h1>
         <form action="/week05/review.html" method="get" id="reviewForm">
-            <label for="productName">Product Name:</label>
+            <label for="productName">Cologne:</label>
             <select id="productName" name="productName" required>
-                <option value="" disabled selected>Select a Product ...</option>
+                <option value="" disabled selected>Select a Cologne ...</option>
                 <!-- Options will be populated by JavaScript -->
             </select>
 
-            <label>Overall Rating:</label>
-            <div class="rating">
-                <label>
-                    <input type="radio" name="rating" value="1" required /> ☆
-                </label>
-                <label>
-                    <input type="radio" name="rating" value="2" required /> ☆
-                </label>
-                <label>
-                    <input type="radio" name="rating" value="3" required /> ☆
-                </label>
-                <label>
-                    <input type="radio" name="rating" value="4" required /> ☆
-                </label>
-                <label>
-                    <input type="radio" name="rating" value="5" required /> ☆
-                </label>
-            </div>
-
+             <label>Overall Rating:</label>
+<div class="rating">
+    <input type="radio" id="star5" name="rating" value="5" required />
+    <label for="star5" title="5 stars">★</label>
+    <input type="radio" id="star4" name="rating" value="4" />
+    <label for="star4" title="4 stars">★</label>
+    <input type="radio" id="star3" name="rating" value="3" />
+    <label for="star3" title="3 stars">★</label>
+    <input type="radio" id="star2" name="rating" value="2" />
+    <label for="star2" title="2 stars">★</label>
+    <input type="radio" id="star1" name="rating" value="1" />
+    <label for="star1" title="1 star">★</label>
+</div>
             <label for="installationDate">Date of Installation:</label>
             <input type="date" id="installationDate" name="installationDate" required />
 
             <fieldset>
-                <legend>Useful Features:</legend>
+                <legend>Useful :</legend>
                 <label for="feature1">
-                    <input type="checkbox" id="feature1" name="features" value="Feature 1" /> Feature 1
+                    <input type="checkbox" id="feature1" name="features" value="Feature 1" /> Quality
                 </label>
                 <label for="feature2">
-                    <input type="checkbox" id="feature2" name="features" value="Feature 2" /> Feature 2
+                    <input type="checkbox" id="feature2" name="features" value="Feature 2" /> Longevity
                 </label>
                 <label for="feature3">
-                    <input type="checkbox" id="feature3" name="features" value="Feature 3" /> Feature 3
+                    <input type="checkbox" id="feature3" name="features" value="Feature 3" /> Silage
                 </label>
                 <label for="feature4">
-                    <input type="checkbox" id="feature4" name="features" value="Feature 4" /> Feature 4
+                    <input type="checkbox" id="feature4" name="features" value="Feature 4" /> Packaging
                 </label>
             </fieldset>
 
